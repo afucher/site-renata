@@ -1,12 +1,18 @@
 .container {
   max-width: 1440px;
+  width: 80%;
 }
 header {
   height: 70px;
   background-color: #E7EFF0;
+}
+
+header > .container {
   display: flex;
   justify-content: space-between;
+  margin: auto;
   align-items: center;
+  height: 100%;
 }
 
 img.logo {
@@ -22,5 +28,60 @@ a {
   font-family: 'Nunito', sans-serif;
   font-size: 18px;
   line-height: 25px;
+  color: #0B5B5A;
+}
+
+
+/* Intro  */
+section.intro {
+  background-color: #FAE0D2;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+section.intro > .container {
+  margin: auto;
+  display: grid;
+  grid-template-areas: "foto descricao"
+                       "frase frase";
+}
+
+img.perfil {
+  width: 360px;
+  height: 400px;
+}
+
+div.descricao {
+  width: 556px;
+}
+
+.descricao > h1 {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 70px;
+  color: #0B5B5A;
+}
+
+.intro >* h2 {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 49px;
+  text-align: center;
+  color: #0B5B5A;
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: 668px;
+}
+
+div.descricao > p {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 48px;
   color: #0B5B5A;
 }
