@@ -1,0 +1,26 @@
+.container {
+  max-width: 1440px;
+}
+header {
+  height: 70px;
+  background-color: #E7EFF0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+img.logo {
+  height: 18px;
+}
+
+nav > a {
+  margin-left: 20px;
+}
+
+a {
+  text-decoration: none;
+  font-family: Nunito;
+  font-size: 18px;
+  line-height: 25px;
+  color: #0B5B5A;
+}
