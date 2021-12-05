@@ -285,3 +285,146 @@ div.card-formacao {
   grid-column-end: -1;
   height: 40px;
 }
+
+/* Produções */
+section.producoes {
+  background: #E7EFF0;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+section.producoes *.destaque {
+  color: #004847;
+}
+
+.ser-no-envelhecimento {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-right: 1px solid #FFF3EC;
+  margin-right: 20px;
+}
+
+div.ser-no-envelhecimento > p {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  color: #208685;
+}
+
+.ser-no-envelhecimento > ul {
+  list-style: disc;
+  list-style-position: inside;
+  margin: 40px 0;
+}
+
+.ser-no-envelhecimento > a {
+  background: linear-gradient(180deg, #0B5B5A 0%, #004847 100%);
+  box-shadow: 1px 1px 1px #004847;
+  border-radius: 5px;
+  font-family: Alegreya;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #FFF3EC;
+  padding: 5px 10px;
+  width: fit-content;
+}
+
+.ser-no-envelhecimento > img {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+}
+
+.ser-no-envelhecimento > ul > li {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #004847;
+}
+
+div.conteudo-producoes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.lista-producoes > p {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #208685;
+}
+
+
+.lista-producoes > .card-producao {
+  margin-top: 20px;
+}
+
+.card-producao {
+  background: #DAE9EA;
+  border-radius: 5px;
+  padding: 10px;
+  position: relative;
+}
+
+.card-producao > img {
+  position: absolute;
+  left: -3px;
+}
+
+.card-producao > div:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.card-producao > .cabecalho {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #208685;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-producao > .conteudo {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 20px;
+  color: #004847;
+}
+
+.card-producao > .rodape {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #208685;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rodape > a {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #FF634D;
+}
