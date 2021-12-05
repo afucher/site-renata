@@ -1,6 +1,7 @@
 .container {
   max-width: 1440px;
   width: 80%;
+  margin: auto;
 }
 header {
   height: 70px;
@@ -40,7 +41,6 @@ section.intro {
 }
 
 section.intro > .container {
-  margin: auto;
   display: grid;
   grid-template-areas: "foto descricao"
                        "frase frase";
@@ -56,7 +56,7 @@ div.descricao {
 }
 
 .descricao > h1 {
-  font-family: 'Alegreya Sans', sans-serif;
+  font-family: 'Alegreya', serif;
   font-style: normal;
   font-weight: bold;
   font-size: 72px;
@@ -64,7 +64,7 @@ div.descricao {
   color: #0B5B5A;
 }
 
-.intro >* h2 {
+.intro >* h3 {
   font-family: Nunito;
   font-style: normal;
   font-weight: normal;
@@ -83,5 +83,77 @@ div.descricao > p {
   font-weight: normal;
   font-size: 24px;
   line-height: 48px;
+  color: #0B5B5A;
+}
+
+/* Experiência */
+section.experiencia {
+  background: #E7EFF0;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+div.lista-experiencia {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+p.data-experiencia {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 25px;
+  color: #004847;
+  justify-self: end;
+  margin-top: 20px;
+}
+
+div.card-experiencia {
+  background: #DAE9EA;
+  border-radius: 3px;
+  padding: 20px;
+  grid-column-start: 2;
+}
+
+.card-experiencia > .titulo {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FF634D;
+}
+.card-experiencia > .subtitulo {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #0B5B5A;
+}
+
+.card-experiencia > ul {
+  list-style: disc;
+  list-style-position: inside;
+}
+
+.card-experiencia > ul > li {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #004847;
+}
+
+h2 {
+  font-family: 'Alegreya', serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 87px;
   color: #0B5B5A;
 }
