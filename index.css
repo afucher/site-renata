@@ -428,3 +428,91 @@ div.conteudo-producoes {
   text-transform: uppercase;
   color: #FF634D;
 }
+
+/* Rodapé */
+footer {
+  background: #004847;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+footer > * > h2 {
+  color: #8ECACA;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  grid-template-areas: "titulo titulo titulo"
+                        "mensagem email social"
+                        "direitos _ creditos";
+}
+
+.footer > h2 {
+  grid-area: titulo;
+}
+
+.footer > p {
+  grid-area: mensagem;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 33px;
+  color: #E7EFF0;
+}
+
+.footer > .email {
+  grid-area: email;
+  justify-self: self-end;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer > .email > * {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #E7EFF0;
+  margin-bottom: 20px;
+}
+
+.footer > .social {
+  grid-area: social;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #E7EFF0;
+  justify-self: self-end;
+}
+
+.social > img {
+  margin-right: 10px;
+}
+
+.footer > .direitos {
+  grid-area: direitos;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 25px;
+  color: #8ECACA;
+  margin-top: 80px;
+}
+
+.footer > .creditos {
+  grid-area: creditos;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 25px;
+  color: #8ECACA;
+  align-self: end;
+  justify-self: self-end;
+}
