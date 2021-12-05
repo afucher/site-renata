@@ -3,6 +3,19 @@
   width: 80%;
   margin: auto;
 }
+
+h2 {
+  font-family: 'Alegreya', serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 87px;
+  color: #0B5B5A;
+  margin-bottom: 20px; 
+}
+
+/* cabecalho */
+
 header {
   height: 70px;
   background-color: #E7EFF0;
@@ -149,11 +162,126 @@ div.card-experiencia {
   color: #004847;
 }
 
-h2 {
-  font-family: 'Alegreya', serif;
+/* Formação */
+section.formacao {
+  background: #FAE0D2;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+div.lista-formacao {
+  display: flex;
+  gap: 20px;
+  justify-content: end;
+  margin-bottom: 80px;
+}
+
+div.card-formacao {
+  background: #CF422F;
+  border-radius: 8px;
+  width: 200px;
+  height: 190px;
+  padding: 20px;
+  padding-top: 16px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.card-formacao > .titulo {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #FFF3EC;
+  margin-bottom: 10px;
+}
+
+.card-formacao > .curso {
+  font-family: Nunito;
   font-style: normal;
   font-weight: bold;
-  font-size: 64px;
-  line-height: 87px;
-  color: #0B5B5A;
+  font-size: 14px;
+  line-height: 19px;
+  color: #FFFFFF;
+  width: 140px;
+}
+
+.card-formacao *> .local {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #FFF3EC;
+}
+
+.card-formacao *> .nota {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #F8B0A2;
+}
+
+.card-formacao > .rodape {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 20px;
+  width: calc(100% - 40px);
+}
+
+.lista-extensivo {
+  display: grid;
+  grid-template-columns: 24px max-content 40px;
+  grid-template-rows: repeat(9, auto);
+  gap: 10px;
+  justify-content: end;
+}
+
+.lista-extensivo > img {
+  grid-row-end: span 4;
+}
+
+.lista-extensivo > h3 {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #004847;
+  grid-column-end: span 2;
+}
+
+.lista-extensivo > p {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #004847;
+}
+
+.lista-extensivo > p.carga-horaria {
+  justify-self: end;
+}
+
+.lista-extensivo > p > span {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #CF422F;
+  margin: 0 10px;
+}
+
+.lista-extensivo > .separador {
+  grid-column-end: -1;
+  height: 40px;
 }
