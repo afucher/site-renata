@@ -4,6 +4,20 @@
   margin: auto;
 }
 
+section {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+h1 {
+  font-family: 'Alegreya', serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 70px;
+  color: #0B5B5A;
+}
+
 h2 {
   font-family: 'Alegreya', serif;
   font-style: normal;
@@ -49,8 +63,6 @@ a {
 /* Intro  */
 section.intro {
   background-color: #FAE0D2;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 section.intro > .container {
@@ -66,15 +78,6 @@ img.perfil {
 
 div.descricao {
   width: 556px;
-}
-
-.descricao > h1 {
-  font-family: 'Alegreya', serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 72px;
-  line-height: 70px;
-  color: #0B5B5A;
 }
 
 .intro >* h3 {
@@ -102,8 +105,6 @@ div.descricao > p {
 /* Experiência */
 section.experiencia {
   background: #E7EFF0;
-  padding-top: 40px;
-  padding-bottom: 60px;
 }
 
 div.lista-experiencia {
@@ -165,8 +166,6 @@ div.card-experiencia {
 /* Formação */
 section.formacao {
   background: #FAE0D2;
-  padding-top: 40px;
-  padding-bottom: 60px;
 }
 
 div.lista-formacao {
@@ -289,12 +288,15 @@ div.card-formacao {
 /* Produções */
 section.producoes {
   background: #E7EFF0;
-  padding-top: 40px;
-  padding-bottom: 60px;
 }
 
 section.producoes *.destaque {
   color: #004847;
+}
+
+div.conteudo-producoes {
+  display: grid;
+  grid-template-areas: "insta producoes";
 }
 
 .ser-no-envelhecimento {
@@ -304,6 +306,7 @@ section.producoes *.destaque {
   position: relative;
   border-right: 1px solid #FFF3EC;
   margin-right: 20px;
+  grid-area: insta;
 }
 
 div.ser-no-envelhecimento > p {
@@ -352,11 +355,6 @@ div.ser-no-envelhecimento > p {
   color: #004847;
 }
 
-div.conteudo-producoes {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
 .lista-producoes > p {
   font-family: Nunito;
   font-style: normal;
@@ -364,6 +362,7 @@ div.conteudo-producoes {
   font-size: 24px;
   line-height: 28px;
   color: #208685;
+  grid-area: producoes;
 }
 
 
@@ -516,3 +515,121 @@ footer > * > h2 {
   align-self: end;
   justify-self: self-end;
 }
+
+@media (max-width: 680px) {
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+
+  nav {
+    display: none;
+  }  
+
+  h1 {
+    font-size: 48px;
+    line-height: 52px;
+  }
+
+  h2 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  section.intro > .container {
+    display: grid;
+    grid-template-areas:  "foto"
+                          "descricao"
+                          "frase";
+  }
+
+  .intro >* h3 {
+    width: 100%;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  div.descricao {
+    width: 100%;
+  }
+
+  div.descricao > p {
+    font-size: 18px;
+    line-height: 36px;
+  }
+
+  img.perfil {
+    width: 180px;
+    height: 200px;
+  }
+
+  div.lista-experiencia {
+    grid-template-columns: 1fr;
+    row-gap: 5px;
+  }
+
+  div.card-experiencia {
+    grid-column-start: 1;
+  }
+
+  div.lista-formacao {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  div.card-formacao {
+    width: 100%;
+    height: 150px;
+  }
+
+  .lista-extensivo {
+    grid-template-columns: 24px 1fr 40px;
+  }
+
+  .lista-extensivo > .separador {
+    height: 20px;
+  }
+
+  .card-formacao > .curso {
+    width: 100%;
+  }
+
+  div.conteudo-producoes {
+    grid-template-areas: "producoes" "insta";
+  }
+
+  .ser-no-envelhecimento {
+    margin-top: 20px;
+  }
+
+  .ser-no-envelhecimento > ul {
+    margin: 20px 0;
+  }
+
+  .ser-no-envelhecimento > img {
+    display: none;
+  }
+
+  .footer {
+    grid-template-columns: 1fr;
+    grid-template-areas: "titulo"
+                         "mensagem"
+                         "email"
+                         "social"
+                         "direitos"
+                         "creditos";
+  }
+
+  .footer > p {
+    text-align: center;
+  }
+
+  .footer > .email {
+    margin-top: 20px;
+  }
+
+  .footer > .email, .footer > .social, .footer > .direitos, .footer > .creditos { 
+    justify-self: center;
+  }
+}
+
